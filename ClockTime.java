@@ -119,4 +119,12 @@ public class ClockTime {
         ClockTime customTime = new ClockTime(23, 75, 80);
         System.out.println("Custom Time: " + customTime);
     }
+    
+    public boolean equals(ClockTime Clock) {
+        boolean isEqual = false;
+        if(hour == Clock.hour && minute == Clock.minute && second == Clock.second){
+            isEqual = true;
+        }
+        return isEqual;
+    }
 }
